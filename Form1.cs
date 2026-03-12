@@ -30,25 +30,35 @@ namespace CatchButton
             if (!btnTarget.Enabled) return;
 
             score -= 10;
-            missCount++; 
+            missCount++;
 
             if (missCount >= 20)
             {
-                UpdateGameTitle(); 
-                btnTarget.Enabled = false; 
-                MessageBox.Show("20번을 놓치셨습니다. Game Over!", "게임 종료", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                return; 
+                UpdateGameTitle();
+                btnTarget.Enabled = false;
+
+                // 1. 예/아니요 버튼이 있는 메시지 박스를 띄우고 사용자의 선택을 result 변수에 저장합니다.
+                DialogResult result = MessageBox.Show(
+                    "20번을 놓치셨습니다. 다시 시작하시겠습니까?",
+                    "Game Over",
+                    MessageBoxButtons.YesNo,
+                    MessageBoxIcon.Question
+                );
+
+                // 2. 사용자의 선택에 따라 동작을 분기합니다.
+                if (result == DialogResult.Yes)
+                {
+                    // '예'를 누르면 다시 시작
+                    btnRestart_Click(null, null);
+                }
+                else
+                {
+                    // '아니요'를 누르면 프로그램(게임)을 완전히 종료
+                    Application.Exit();
+                }
+
+                return;
             }
-
-            int maxX = this.ClientSize.Width - btnTarget.Width;
-            int maxY = this.ClientSize.Height - btnTarget.Height;
-
-            int nextX = rd.Next(0, Math.Max(1, maxX));
-            int nextY = rd.Next(0, Math.Max(1, maxY));
-
-            btnTarget.Location = new Point(nextX, nextY);
-
-            UpdateGameTitle();
         }
 
         private void btnTarget_Click(object sender, EventArgs e)
