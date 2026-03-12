@@ -12,6 +12,6 @@
 - 3단계 코드의 실행 스크린샷
 <img width="1678" height="986" alt="image" src="https://github.com/user-attachments/assets/76131601-d80d-4555-9c40-1864f3e3648e" />
 - 4단계 코드의 실행 스크린샷
-(여기에 이미지 삽입)
+<img width="1670" height="976" alt="스크린샷 2026-03-12 175410" src="https://github.com/user-attachments/assets/1f6c0863-cd1d-48b6-a517-73edb388cbfa" />
 ## 구현 시 어려웠던 점
 - 컨트롤의 좌표를 제한하는 것이 어려웠다.
