@@ -10,7 +10,7 @@
 - 2단계 코드의 실행 스크린샷
 <img width="1696" height="992" alt="image" src="https://github.com/user-attachments/assets/18c5a097-a996-4ea9-9ab0-c6f27ee3a58d" />
 - 3단계 코드의 실행 스크린샷
-(여기에 이미지 삽입)
+<img width="1678" height="986" alt="image" src="https://github.com/user-attachments/assets/76131601-d80d-4555-9c40-1864f3e3648e" />
 - 4단계 코드의 실행 스크린샷
 (여기에 이미지 삽입)
 ## 구현 시 어려웠던 점
