@@ -25,5 +25,10 @@ namespace CatchButton
 
             this.Text = "버튼 위치 - X: " + btnTarget.Location.X + ", Y: " + btnTarget.Location.Y;
         }
+
+        private void btnTarget_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show("축하합니다~!");
+        }
     }
 }

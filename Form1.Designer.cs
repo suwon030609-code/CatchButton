@@ -39,6 +39,7 @@
             btnTarget.TabIndex = 0;
             btnTarget.Text = "나를 잡아봐";
             btnTarget.UseVisualStyleBackColor = true;
+            btnTarget.Click += btnTarget_Click;
             btnTarget.MouseEnter += BtnTarget_MouseEnter;
             // 
             // Form1
@@ -48,7 +49,7 @@
             ClientSize = new Size(1674, 929);
             Controls.Add(btnTarget);
             Name = "Form1";
-            Text = "Form1";
+            Text = "버튼 잡기 게임";
             ResumeLayout(false);
         }
 
